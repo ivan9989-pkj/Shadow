@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/preferencias.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="/">
+                    <img class="Foto-logo" src="./img/Imagen2.png" alt="">
+                </a>
+                <div id="clockdate">
+                    <div class="clockdate-wrapper">
+                      <div id="clock"></div>
+                      <div id="date"></div>
+                    </div>
+                  </div>
+                    <div class="derecha">
+                    <div class="hamburguesa-container">
+                        <img id="hamburguesa" src="./img/hamburguesa.svg" alt="Menú Hamburguesa">
+                    </div>
+                    <nav class="navegador" id="menu--navegacion">
+                        <a href="/">Inicio</a>
+                        <a href="./nosotros.html">Nosotros</a>
+                        <a href="./contacto.html">Contacto</a>
+                        <a href="./info.html">Información</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <h1>Preferencias de Usuario</h1>
+    <form id="preferencesForm">
+        <div class="Formulario">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="Formulario">
+            <label for="backgroundColor">Color de fondo preferido:</label>
+            <input type="color" id="backgroundColor" name="backgroundColor">
+        </div>
+        <div class="Formulario">
+            <label for="textColor">Color de letra preferido:</label>
+            <input type="color" id="textColor" name="textColor">
+        </div>
+        <button type="submit">Guardar Preferencias</button>
+    </form>
+
+    <script>
+        document.getElementById('preferencesForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const backgroundColor = document.getElementById('backgroundColor').value;
+            const textColor = document.getElementById('textColor').value;
+            localStorage.setItem('name', name);
+            localStorage.setItem('backgroundColor', backgroundColor);
+            localStorage.setItem('textColor', textColor);
+            window.location.href = 'index.html';
+        });
+    </script>
+
+
+
+
+
+</body>
+</html>

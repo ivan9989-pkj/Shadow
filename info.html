@@ -1,0 +1,688 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShadowStrike Supply</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/info.css">
+    <script src="js/tabla.js"></script>
+    <script src="./js/clicks.js"></script>
+    <script src="./js/java.js"></script>
+    <script src="./js/hamburguesa.js"></script>
+    <script src="./js/geo.js"></script>
+    <script src="./js/cookies.js"></script>
+    
+
+</head>
+<body>
+    <div id="cookieConsent" class="cookie-consent">
+        <p>Este sitio web utiliza cookies. ¿Aceptas nuestra política de cookies?</p>
+        <button id="btnAceptar">Aceptar</button>
+        <button id="btnDenegar">Denegar</button>
+    </div>
+    
+    <header class="header" id="#Principio">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="/">
+                    <img class="Foto-logo" src="./img/Imagen2.png" alt="">
+                </a>
+                <div id="clockdate">
+                    <div class="clockdate-wrapper">
+                      <div id="clock"></div>
+                      <div id="date"></div>
+                    </div>
+                  </div>
+                <div class="derecha">
+                    <div class="derecha">
+                        <div class="hamburguesa-container">
+                            <img id="hamburguesa" src="./img/hamburguesa.svg" alt="Menú Hamburguesa">
+                        </div>
+                        <nav class="navegador" id="menu--navegacion">
+                            <a href="/">Inicio</a>
+                            <a href="./nosotros.html">Nosotros</a>
+                            <a href="./contacto.html">Contacto</a>
+                            <a href="./info.html">Información</a>
+                        </nav>
+                        <!-- <a href=""><img src="./img/search.svg" alt=""></a>
+                        <a href="" ><img src="./img/shopping-cart.svg" alt=""></a> -->
+    
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+        <div id="Info">
+            <h2>ShadowStrike con la mejor Información de Airsoft</h2>
+            <ul class="navinfo">
+                <li><a href="#Videos">Videos</a></li>
+                <li><a href="#Armas">Armas</a>
+                <ul>
+                    <li><a href="#Pistolas">Pistolas</a></li>
+                    <li><a href="#Subfusiles">Subfusiles</a></li>
+                    <li><a href="#Rifle">Rifles</a>
+                    <ul>
+                        <li><a href="#Fusil">Fusil</a>
+                        <li><a href="#Francos">Francos</a>
+                    </ul>
+                    </li>
+                    <li><a href="#Escopetas">Escopetas</a></li>
+                    <li><a href="#Metralletas">Granadas</a></li>
+                </ul>
+                </li>
+                <li><a href="#Tienda">Tiendas</a></li>
+                <li><a href="#Hangar">Hangar37</a></li>
+    
+            </ul>
+        </div>
+       
+    </header>
+
+
+
+
+    <main id="Videos">
+        <h2>Videos de Airsoft</h2>
+        <div class="video-container">        
+        <div class="video-placeholder" id="video1"> 
+                    <video id="video" src="./videos/(y2save.net) El Origen y Evoluci n del Airsoft.mp4" controls></video>
+         </div>
+            <div class="video-placeholder" id="video2">
+             <video id="video" src="./videos/(y2save.net)  QU ES EL AIRSOFT Concepto general Espa ol.mp4" controls></video>  
+            </div>
+         
+        </div>
+        <div class="video-link">
+            <div class="link">
+
+                <button class="boton1" onclick="window.location.href='https://youtu.be/EDWI6DR7Sf8?si=pt1JhMfkqFuCQ7mr'">Origenes del Airsoft</button>
+            </div>
+            <div class="link">
+                <button class="boton2" onclick="window.location.href='https://youtu.be/zk30SJUaLck?si=TlS_hBDCITCw7yC0'">¿Que es el Airsoft?</button>
+            </div>
+        </div>
+    </main>
+
+
+    <main id="Armas">
+        <h2>Armas de Airsoft</h2>
+        
+      
+          <!-- Categoría: Pistolas -->
+          <div id="Pistolas" class="categoria-arma Pistola">
+            <h2>Pistolas</h2>
+            <div id="letras">
+                <button  onclick="ordenarTabla('A', 'miTabla1')">A</button>
+                <button onclick="ordenarTabla('B', 'miTabla1')">B</button>
+                <button onclick="ordenarTabla('C', 'miTabla1')">C</button>
+                <button onclick="ordenarTabla('D', 'miTabla1')">D</button>
+                <button onclick="ordenarTabla('E', 'miTabla1')">E</button>
+                <button onclick="ordenarTabla('F', 'miTabla1')">F</button>
+                <button onclick="ordenarTabla('G', 'miTabla1')">G</button>
+                <button onclick="ordenarTabla('H', 'miTabla1')">H</button>
+                <button onclick="ordenarTabla('I', 'miTabla1')">I</button>
+                <button onclick="ordenarTabla('J', 'miTabla1')">J</button>
+                <button onclick="ordenarTabla('K', 'miTabla1')">K</button>
+                <button onclick="ordenarTabla('L', 'miTabla1')">L</button>
+                <button class="letra" onclick="ordenarTabla('M', 'miTabla1')">M</button>
+                <button onclick="ordenarTabla('N', 'miTabla1')">N</button>
+                <button onclick="ordenarTabla('O', 'miTabla1')">O</button>
+                <button onclick="ordenarTabla('P', 'miTabla1')">P</button>
+                <button onclick="ordenarTabla('Q', 'miTabla1')">Q</button>
+                <button class="letra" onclick="ordenarTabla('R', 'miTabla1')">R</button>
+                <button onclick="ordenarTabla('S', 'miTabla1')">S</button>
+                <button onclick="ordenarTabla('T', 'miTabla1')">T</button>
+                <button onclick="ordenarTabla('U', 'miTabla1')">U</button>
+                <button onclick="ordenarTabla('V', 'miTabla1')">V</button>
+                <button onclick="ordenarTabla('W', 'miTabla1')">W</button>
+                <button onclick="ordenarTabla('X','miTabla1')">X</button>
+                <button onclick="ordenarTabla('Y', 'miTabla1')">Y</button>
+                <button onclick="ordenarTabla('Z', 'miTabla1')">Z</button>
+            </div>
+        <table class="tabla-info" id="miTabla1">
+            <thead>
+                <th></th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+            </thead>
+            <tbody id="tablaBody1">
+                <tr>
+                    <td><img src="./img/Rossi Redwings Grey.png" alt=""></td>
+                    <td>Rossi Redwings Grey</td>
+                    <td>La tradición de diseño y fabricación de armas de fuego de Rossi comenzó con la fundación de la empresa en 1889 por el armero italiano Amadeo Rossi. En los últimos 130 años, este legado se ha desarrollado junto con la empresa y la familia Rossi.</td>
+                </tr>
+                <tr>
+                    <td><img src="./img/Marui Usp.jpg" alt=""></td>
+                    <td>Marui Usp</td>
+                    <td>Pistola hk usp alimentada mediante gas Su longitud es de 19 centímetros, 1 julio 260 fps de potencia fabricada en abs y metal blow back calibre 6mm capacidad del cargador 25bbs incluido peso 728 gramos.</td>
+                </tr>
+                <tr>
+                    <td><img src="./img/AAP01.jpg" alt=""></td>
+                    <td>AAP01 Semi Auto</td>
+                    <td>AAP01 es una réplica de pistola ASG a gasolina hecha de polímero duradero reforzado con fibra de vidrio. Las piezas de metal incluyen la corredera, el cañón externo, el cargador y pequeños detalles.</td>
+                </tr>
+                <tr>
+                    <td><img src="./img/Molon.jpg" alt=""></td>
+                    <td>Molon Labe Full Metal </td>
+                    <td>1911 Molon Labe de AW Custom es definitivamente llamativo.
+                        La obra de arte se hizo con gran atención al detalle y le da a esta réplica un aspecto real de tiempos de guerra.</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <!-- Categoría: Subfusiles -->
+        <div id="Subfusiles" class="categoria-arma Subfusiles">
+            <h2>Subfusiles</h2>
+            <div id="letras">
+                <button  onclick="ordenarTabla('A', 'miTabla2')">A</button>
+                <button onclick="ordenarTabla('B', 'miTabla2')">B</button>
+                <button onclick="ordenarTabla('C', 'miTabla2')">C</button>
+                <button onclick="ordenarTabla('D', 'miTabla2')">D</button>
+                <button onclick="ordenarTabla('E', 'miTabla2')">E</button>
+                <button onclick="ordenarTabla('F', 'miTabla2')">F</button>
+                <button onclick="ordenarTabla('G', 'miTabla2')">G</button>
+                <button onclick="ordenarTabla('H', 'miTabla2')">H</button>
+                <button onclick="ordenarTabla('I', 'miTabla2')">I</button>
+                <button onclick="ordenarTabla('J', 'miTabla2')">J</button>
+                <button onclick="ordenarTabla('K', 'miTabla2')">K</button>
+                <button onclick="ordenarTabla('L', 'miTabla2')">L</button>
+                <button class="letra" onclick="ordenarTabla('M', 'miTabla2')">M</button>
+                <button onclick="ordenarTabla('N', 'miTabla2')">N</button>
+                <button onclick="ordenarTabla('O', 'miTabla2')">O</button>
+                <button onclick="ordenarTabla('P', 'miTabla2')">P</button>
+                <button onclick="ordenarTabla('Q', 'miTabla2')">Q</button>
+                <button class="letra" onclick="ordenarTabla('R', 'miTabla2')">R</button>
+                <button onclick="ordenarTabla('S', 'miTabla2')">S</button>
+                <button onclick="ordenarTabla('T', 'miTabla2')">T</button>
+                <button onclick="ordenarTabla('U', 'miTabla2')">U</button>
+                <button onclick="ordenarTabla('V', 'miTabla2')">V</button>
+                <button onclick="ordenarTabla('W', 'miTabla2')">W</button>
+                <button onclick="ordenarTabla('X','miTabla2')">X</button>
+                <button onclick="ordenarTabla('Y', 'miTabla2')">Y</button>
+                <button onclick="ordenarTabla('Z', 'miTabla2')">Z</button>
+            </div>
+            
+        <table class="tabla-info" id="miTabla2">
+            <thead>
+                <th></th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+            </thead>
+            <tbody id="tablaBody2">
+                <tr>
+                    <td><img src="./img/Subfusil.png" alt=""></td>
+                    <td>M5 Navy-II</td>
+                    <td>Cuerpo de metal
+                        Nombre del modelo: M5 NAVY-II
+                        Longitud total: 685 mm (Culata abierta) / 590 mm (Culata cerrada)
+                        Peso: 2540 g (incluida la batería)
+                        Longitud del cañón: 229 mm
+                        Capacidad del cargador: 200 bolas
+                        Velocidad: 330-360FPS
+                        Batería: 8,4 V, 1100 mAh (NiMh)</td>
+                </tr>
+                <tr>
+                    <td><img src="./img/M5SD5.jpg" alt=""></td>
+                    <td>M5SD5-II</td>
+                    <td>Cuerpo de metal
+                        Nombre del modelo: M5 SD5-II
+                        Longitud total: 776 mm
+                        Peso: 2400 g (incluida la batería)
+                        Longitud del cañón: 229 mm
+                        Capacidad del cargador: 200 bbs
+                        Velocidad: 330-360FPS (con 0.20g 6mm)
+                        Batería: 8,4 V, 1100 mAh (NiMh)</td>
+                </tr>
+                <tr>
+                    <td><img src="./img/Mauri mp7.jpg" alt=""></td>
+                    <td>Marui mp7 A1</td>
+                    <td>El MP7 A1 de Marui tiene el mismo peso, tamaño y acabados exteriores que el real tales como:
+                        Grip plegable
+                        Mira estilo KSK plegable
+                        Raíl para mira weaver
+                        Raíl lateral
+                        Culata plegable
+                        Gatillo de seguridad.</td>
+                </tr>
+                <tr>
+                    <td><img src="./img/AEG.jpg" alt=""></td>
+                    <td>AEG NEGRO
+                    </td>
+                    <td>Tipo: AEG
+                        Cuerpo: Plástico
+                        Guardamanos: Plástico
+                        Longitud total: 605mm
+                        Peso: 2326g
+                        Cojinetes: 8mm
+                        Motor: 18000rpm
+                        Cañón interno: Aluminio 128mm - diámetro 6.08mm
+                        Cámara de Hop Up: Plástico tipo rotatorio
+                        Cargador: 130R + 170R (incluye 2 cargadores)
+                        Velocidad: 100m/s
+                        Blowback: No
+                        Cableado: 16 AWG
+                        Cilindro: Aluminio
+                        Cabeza cilindro: Plástico
+                        Cabeza pistón: Plástico
+                        Pistón: Plástico
+                        Gatillo Electrónico: Si
+                        MOSFET: Si
+                        Guía de muelle: Metal</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <!-- Categoría: Rifles -->
+        <div id="Rifle" class="categoria-arma Rifle">
+            <h2>Fusil</h2>
+            <h3>Rifles</h3>
+            <!-- Subcategoría: Fusil -->
+            <div id="Fusil" class="subcategoria-arma Fusil">
+                <div id="letras">
+                    <button  onclick="ordenarTabla('A', 'miTabla3')">A</button>
+                    <button onclick="ordenarTabla('B', 'miTabla3')">B</button>
+                    <button onclick="ordenarTabla('C', 'miTabla3')">C</button>
+                    <button onclick="ordenarTabla('D', 'miTabla3')">D</button>
+                    <button onclick="ordenarTabla('E', 'miTabla3')">E</button>
+                    <button onclick="ordenarTabla('F', 'miTabla3')">F</button>
+                    <button onclick="ordenarTabla('G', 'miTabla3')">G</button>
+                    <button onclick="ordenarTabla('H', 'miTabla3')">H</button>
+                    <button onclick="ordenarTabla('I', 'miTabla3')">I</button>
+                    <button onclick="ordenarTabla('J', 'miTabla3')">J</button>
+                    <button onclick="ordenarTabla('K', 'miTabla3')">K</button>
+                    <button onclick="ordenarTabla('L', 'miTabla3')">L</button>
+                    <button class="letra" onclick="ordenarTabla('M', 'miTabla3')">M</button>
+                    <button onclick="ordenarTabla('N', 'miTabla3')">N</button>
+                    <button onclick="ordenarTabla('O', 'miTabla3')">O</button>
+                    <button onclick="ordenarTabla('P', 'miTabla3')">P</button>
+                    <button onclick="ordenarTabla('Q', 'miTabla3')">Q</button>
+                    <button class="letra" onclick="ordenarTabla('R', 'miTabla3')">R</button>
+                    <button onclick="ordenarTabla('S', 'miTabla3')">S</button>
+                    <button onclick="ordenarTabla('T', 'miTabla3')">T</button>
+                    <button onclick="ordenarTabla('U', 'miTabla3')">U</button>
+                    <button onclick="ordenarTabla('V', 'miTabla3')">V</button>
+                    <button onclick="ordenarTabla('W', 'miTabla3')">W</button>
+                    <button onclick="ordenarTabla('X','miTabla3')">X</button>
+                    <button onclick="ordenarTabla('Y', 'miTabla3')">Y</button>
+                    <button onclick="ordenarTabla('Z', 'miTabla3')">Z</button>
+                </div>
+                <table class="tabla-info" id="miTabla3">
+                    <thead>
+                        <th></th>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                    </thead>
+                    <tbody id="tablaBody2">
+                        <tr>
+                            <td><img src="./img/Fusiles1.jpg" alt=""></td>
+                            <td>J.G. G36C</td>
+                            <td>Rifle de aire suave 0.99 Joule potencia de tiro, caja de engranajes de metal, engranajes de metal y mecánicos completamente personalizables. CQB fútbol en ABS ajustable. Operación automática y semiautomática (disparo simple / ráfaga). Sistema de salto ajustable.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./img/Fusiles2.jpg" alt=""></td>
+                            <td>M4 SHINOBI Saigo</td>
+                            <td>Blow Back: NO
+                                Hop Up: SI
+                                Peso: 2000 g
+                                Longitud: 750 mm
+                                Construcción: Polímero
+                                FPS: 330
+                                Cargador: 130 rds
+                                Batería: 11.1V 800mah AC12632 no incluida
+                                Cargador de baterías AC12286 no incluido</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./img/Fusiles3.jpg" alt=""></td>
+                            <td>Sentinel Epsilon</td>
+                            <td>Gearbox Ver.2 QD
+                                Guía de muelle QD
+                                Engranaje 18:1
+                                Pistón de acero 14,5 teeth
+                                Gatillo electrónico Ver.1
+                                Casquillo acero 8mm
+                                Cuerpo polimero ROSSI
+                                Guardamanos metálico CNC
+                                Cargador Hi-Cap Metálico</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./img/Fusiles4.jpg" alt=""></td>
+                            <td>CYMA Electric Rifle CM3</td>
+                            <td>Réplica de submetro de la Segunda Guerra Mundial
+                                Cuerpo de metal, guardamanos y culata imitación madera
+                                Caja de cambios y engranajes metálicos
+                                Cargador hi-cap de 420 rounds
+                                Cloqueo de seguridad, disparo único o ráfaga
+                                Eslinga incluida
+                                Batería ni-mh 8.4v x 1100mah y cargador de batería incluidos
+                                Longitud 82cm
+                                Peso 2940g</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3 class="Franco">Francos</h3>
+            <!-- Subcategoría: Francos -->
+            <div  id="Francos" class="subcategoria-arma Francos">
+                <div id="letras">
+                    <button  onclick="ordenarTabla('A', 'miTabla4')">A</button>
+                    <button onclick="ordenarTabla('B', 'miTabla4')">B</button>
+                    <button onclick="ordenarTabla('C', 'miTabla4')">C</button>
+                    <button onclick="ordenarTabla('D', 'miTabla4')">D</button>
+                    <button onclick="ordenarTabla('E', 'miTabla4')">E</button>
+                    <button onclick="ordenarTabla('F', 'miTabla4')">F</button>
+                    <button onclick="ordenarTabla('G', 'miTabla4')">G</button>
+                    <button onclick="ordenarTabla('H', 'miTabla4')">H</button>
+                    <button onclick="ordenarTabla('I', 'miTabla4')">I</button>
+                    <button onclick="ordenarTabla('J', 'miTabla4')">J</button>
+                    <button onclick="ordenarTabla('K', 'miTabla4')">K</button>
+                    <button onclick="ordenarTabla('L', 'miTabla4')">L</button>
+                    <button class="letra" onclick="ordenarTabla('M', 'miTabla4')">M</button>
+                    <button onclick="ordenarTabla('N', 'miTabla4')">N</button>
+                    <button onclick="ordenarTabla('O', 'miTabla4')">O</button>
+                    <button onclick="ordenarTabla('P', 'miTabla4')">P</button>
+                    <button onclick="ordenarTabla('Q', 'miTabla4')">Q</button>
+                    <button class="letra" onclick="ordenarTabla('R', 'miTabla4')">R</button>
+                    <button onclick="ordenarTabla('S', 'miTabla4')">S</button>
+                    <button onclick="ordenarTabla('T', 'miTabla4')">T</button>
+                    <button onclick="ordenarTabla('U', 'miTabla4')">U</button>
+                    <button onclick="ordenarTabla('V', 'miTabla4')">V</button>
+                    <button onclick="ordenarTabla('W', 'miTabla4')">W</button>
+                    <button onclick="ordenarTabla('X','miTabla4')">X</button>
+                    <button onclick="ordenarTabla('Y', 'miTabla4')">Y</button>
+                    <button onclick="ordenarTabla('Z', 'miTabla4')">Z</button>
+                </div>
+                <table class="tabla-info" id="miTabla4">
+                    <thead>
+                        <th></th>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                    </thead>
+                    <tbody id="tablaBody2">
+                        <tr>
+                            <td><img src="./img/Franco.png" alt=""></td>
+                            <td>SPR Rifle AWP well mira bip. C. pleg.</td>
+                            <td>Calibre: 6 mm
+                                Fuente de energía: Muelle
+                                Blow back: No
+                                Hop Up: Si
+                                Material: ABS Metal
+                                Capacidad del cargador: 30 rds
+                                Energía: 1J
+                                Velocidad de salida: 500-530 FPS
+                                Longitud: 1130 mm
+                                Peso: 3700 grs
+                                </td>
+                        </tr>
+                        <tr>
+                            <td><img src="./img/Franco2.jpg" alt=""></td>
+                            <td>Marui VSR-10 G-Spec Sniper</td>
+                            <td>Rifle francotirador o sniper de cerrojo con funcionamiento por muelle(spring),modelo VSR 10 G-SPEC(Con silenciador) de la marca Tokio Marui,para la práctica del airsoft.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./img/Franco3.jpg" alt=""></td>
+                            <td>SSG96 Airsoft Sniper Rifle</td>
+                            <td>El rifle de francotirador más famoso ahora completamente actualizado.
+
+                                Increíblemente duradero. Puede llevar un resorte M220.
+                                Exactitud suprema. Diseñado para BB pesados. 0,46 g recomendado.
+                                100% AirSeal incluso con los resortes más resistentes del mercado.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./img/Franco4.jpg" alt=""></td>
+                            <td>ROSSI DESERT STORM</td>
+                            <td>Cuerpo de nylon inyectado de alta resistencia
+                                Gatillera reforzada con acero CNC
+                                Cilindro de acero:
+                                Pistón de aluminio CNC reforzado (Acero)
+                                Guía de muelle reforzada (Aluminio)
+                                Cañón interno de precisión 6,02mm tipo VSR
+                                Cañón externo cónico acanalado.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+          <!-- Categoría: Escopetas -->
+        <div id="Escopetas" class="categoria-arma Escopetas">
+            <h2>Escopetas</h2>
+            <div id="letras">
+                <button  onclick="ordenarTabla('A', 'miTabla5')">A</button>
+                <button onclick="ordenarTabla('B', 'miTabla5')">B</button>
+                <button onclick="ordenarTabla('C', 'miTabla5')">C</button>
+                <button onclick="ordenarTabla('D', 'miTabla5')">D</button>
+                <button onclick="ordenarTabla('E', 'miTabla5')">E</button>
+                <button onclick="ordenarTabla('F', 'miTabla5')">F</button>
+                <button onclick="ordenarTabla('G', 'miTabla5')">G</button>
+                <button onclick="ordenarTabla('H', 'miTabla5')">H</button>
+                <button onclick="ordenarTabla('I', 'miTabla5')">I</button>
+                <button onclick="ordenarTabla('J', 'miTabla5')">J</button>
+                <button onclick="ordenarTabla('K', 'miTabla5')">K</button>
+                <button onclick="ordenarTabla('L', 'miTabla5')">L</button>
+                <button class="letra" onclick="ordenarTabla('M', 'miTabla5')">M</button>
+                <button onclick="ordenarTabla('N', 'miTabla5')">N</button>
+                <button onclick="ordenarTabla('O', 'miTabla5')">O</button>
+                <button onclick="ordenarTabla('P', 'miTabla5')">P</button>
+                <button onclick="ordenarTabla('Q', 'miTabla5')">Q</button>
+                <button class="letra" onclick="ordenarTabla('R', 'miTabla5')">R</button>
+                <button onclick="ordenarTabla('S', 'miTabla5')">S</button>
+                <button onclick="ordenarTabla('T', 'miTabla5')">T</button>
+                <button onclick="ordenarTabla('U', 'miTabla5')">U</button>
+                <button onclick="ordenarTabla('V', 'miTabla5')">V</button>
+                <button onclick="ordenarTabla('W', 'miTabla5')">W</button>
+                <button onclick="ordenarTabla('X','miTabla5')">X</button>
+                <button onclick="ordenarTabla('Y', 'miTabla5')">Y</button>
+                <button onclick="ordenarTabla('Z', 'miTabla5')">Z</button>
+            </div>
+            <table class="tabla-info" id="miTabla5">
+                <thead>
+                    <th></th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                </thead>
+                <tbody id="tablaBody2">
+                    <tr>
+                        <td><img src="./img/Escopeta.png" alt=""></td>
+                        <td>CM 102 CYMA</td>
+                        <td>M.102 es una réplica eléctrica de una escopeta completamente automática. El mecanismo es un gearbox dedicada con 3 canones, que te permite disparar 3 bolas a la vez. Cada canón tiene un sistema de hop up ajustable por separado, que mejora el alcance y la precisión de la escopeta.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./img/M5SD5.jpg" alt=""></td>
+                        <td>M309</td>
+                        <td>Estupenda réplica a escala 1: 1 de una de las escopetas más populares, utilizada por civiles, policías o militares. La réplica ha sido producida por Double Eagle especialmente para el mercado del airsoft. </td>
+                    </tr>
+                   
+               
+                </tbody>
+            </table>
+            </div>
+
+            <div id="Metralletas" class="categoria-arma Metralletas">
+                <h2>Granadas</h2>
+                <div id="letras">
+                    <button  onclick="ordenarTabla('A', 'miTabla6')">A</button>
+                    <button onclick="ordenarTabla('B', 'miTabla6')">B</button>
+                    <button onclick="ordenarTabla('C', 'miTabla6')">C</button>
+                    <button onclick="ordenarTabla('D', 'miTabla6')">D</button>
+                    <button onclick="ordenarTabla('E', 'miTabla6')">E</button>
+                    <button onclick="ordenarTabla('F', 'miTabla6')">F</button>
+                    <button onclick="ordenarTabla('G', 'miTabla6')">G</button>
+                    <button onclick="ordenarTabla('H', 'miTabla6')">H</button>
+                    <button onclick="ordenarTabla('I', 'miTabla6')">I</button>
+                    <button onclick="ordenarTabla('J', 'miTabla6')">J</button>
+                    <button onclick="ordenarTabla('K', 'miTabla6')">K</button>
+                    <button onclick="ordenarTabla('L', 'miTabla6')">L</button>
+                    <button class="letra" onclick="ordenarTabla('M', 'miTabla6')">M</button>
+                    <button onclick="ordenarTabla('N', 'miTabla6')">N</button>
+                    <button onclick="ordenarTabla('O', 'miTabla6')">O</button>
+                    <button onclick="ordenarTabla('P', 'miTabla6')">P</button>
+                    <button onclick="ordenarTabla('Q', 'miTabla6')">Q</button>
+                    <button class="letra" onclick="ordenarTabla('R', 'miTabla6')">R</button>
+                    <button onclick="ordenarTabla('S', 'miTabla6')">S</button>
+                    <button onclick="ordenarTabla('T', 'miTabla6')">T</button>
+                    <button onclick="ordenarTabla('U', 'miTabla6')">U</button>
+                    <button onclick="ordenarTabla('V', 'miTabla6')">V</button>
+                    <button onclick="ordenarTabla('W', 'miTabla6')">W</button>
+                    <button onclick="ordenarTabla('X','miTabla6')">X</button>
+                    <button onclick="ordenarTabla('Y', 'miTabla6')">Y</button>
+                    <button onclick="ordenarTabla('Z', 'miTabla6')">Z</button>
+                </div>
+                <table class="tabla-info" id="miTabla6">
+                    <thead>
+                        <th></th>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                    </thead>
+                    <tbody id="tablaBody2">
+                        <tr>
+                            <td><img src="./img/Granada3.jpg" alt=""></td>
+                            <td>Granada 40mm 120 Azul</td>
+                            <td>Una granada de 40 mm fabricada en metal por Specna Arms. Los productos están dedicados a los lanzagranadas ASG como el M203. La granada funciona con Green Gas y su alta capacidad permite disparar 120 BB simultáneamente.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./img/Granada2.jpg" alt=""></td>
+                            <td>M84 Dummy Granada</td>
+                            <td>Granada Dummy Táctica M84 flashbomb</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./img/Granada.png" alt=""></td>
+                            <td>M26 Dummy Granada</td>
+                            <td>Réplica de alta calidad de la granada de fragmentación M-26 de las fuerzas estadounidenses. Cuerpo de granada simulado, fusible, soporte y pasador.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./img/Granada4.jpeg" alt=""></td>
+                            <td>Kamikaze
+                            </td>
+                            <td>Granada de detonación accionada por impacto para múltiples usos: Entrenamiento policial y militar, juegos de Airsoft, simulación de combate…</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+    </main>
+
+
+    
+    <div class="Tienda-info">
+
+        <h3>Tiendas</h3>
+        <p>Aqui podras ver algunas de las tiendas que hay en nuestra Isla Gran Canarias . En la imagen podran ver la dirección y el nombre tiene la dirección a su pagina web</p>
+
+    </div>
+
+    <section id="Tienda">
+
+       
+        <div class="contenedor-tienda">
+            <a href="https://maps.app.goo.gl/FGoeZ89GrhjrU5vQ8" target="_blank">
+                
+                    <picture>
+                        <img src="./img/Airsoft Canarias.png" alt="Av Pintor Felo Monzón, N° 28, Local 9, 35019 Las Palmas de Gran Canaria, Las Palmas">
+                    </picture>
+                </a>    
+                    <div class="contenido-tienda">
+                        <a href="https://airsoftcanarias.com/">
+                            <h3>Airsoft Canarias</h3>
+                        </a>
+                        
+                    </div>
+                
+            
+        </div>
+            
+       
+
+
+        <div class="contenedor-tienda">
+            <a href="https://maps.app.goo.gl/nA16gZKA3Zgydo1fA" target="_blank">
+              
+                    <picture>
+                        <img src="./img/Airsoft-Galdar.png" alt="Ctra. General, 112X, 35460 Gáldar, Las Palmas">
+                    </picture>
+                </a>    
+                    <div class="contenido-tienda">
+                        <a href="https://battlefish.es/es/tiendas">
+                            <h3>BattleFish Gáldar</h3>
+                        </a>
+                       
+                    </div>
+               
+            
+        </div>
+
+
+
+        <div class="contenedor-tienda">
+            <a href="https://maps.app.goo.gl/nihGSYSACBrNCynm7" target="_blank">
+                
+                    <picture>
+                        <img src="./img/Armeria Suarez.png" alt="C. Atindana, 2, 35110 Vecindario, Las Palmas">
+                    </picture>
+                </a>    
+                    <div class="contenido-tienda">
+                        <a href="https://www.facebook.com/Armeriasuarez/">
+                            <h3>Armería Suarez</h3>
+                        </a>
+                        
+                    </div>
+              
+            
+        </div>
+
+
+        <div class="contenedor-tienda">
+            <a href="https://maps.app.goo.gl/NVitaQQdBRPZiXwD8" target="_blank">
+              
+                    <picture>
+                        <img src="./img/Hangar37.png" alt="Karting, 35107 Tarajalillo, Las Palmas">
+                    </picture>
+                </a>    
+                    <div class="contenido-tienda">
+                        <a href="https://www.hangar37.es/tienda/">
+                            <h3>HANGAR37 Tienda</h3>
+                        </a>
+                        
+                    </div>
+              
+            
+        </div>
+
+
+        
+    </section>
+
+
+    <footer id="Hangar">
+
+       
+        <div  class="Hangar37">
+            <img src="./img/Hangar37-foto.jpg" alt="">
+            <div class="Hangar37-p">
+                <h3>HANGAR37</h3>
+                <p>Este es el hangar37 un lugar donde puedes comprar Armas de Airsoft y ademas jugar a este deporte , con amigos o otras personas , obviamente puedes usar tus armas  o las que te den</p>
+                <a class="boton-hangar" href="https://www.hangar37.es/tienda/">Hangar37</a>
+            </div>
+
+        </div>
+
+            <div class="Saber-mas">
+
+                <h3>¿Quieres Saber más de Nosotros?</h3>
+
+                <div class="volver">
+                    <a class="volver-nosotros" href="./nosotros.html">Más Sobre Nosotros</a>
+                </div>
+
+            </div>
+
+    </footer>
+    
+ 
+</body>
+</html>

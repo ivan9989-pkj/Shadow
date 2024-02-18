@@ -1,0 +1,100 @@
+
+body {
+    background-image: url(../img/fondo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: 100vh; /* Asegura que el cuerpo ocupe el 100% de la altura de la ventana del navegador */
+}
+
+html {
+    height: 100%; /* Asegura que el elemento html también ocupe el 100% de la*/
+}
+/*Formulario*/
+
+form {
+    color: #fff;
+    margin-top: 10rem;
+    margin-right: 30%;
+    margin-left: 30%;
+    background-color: rgba(30, 30, 30, 0.8); /* Ajusta el valor alpha según tu preferencia */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #b7a76d;
+    border-radius: 4px;
+    background-color: #1E1E1E;
+    color: #fff;
+}
+
+textarea {
+    width: 100%;
+    height: 10rem;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #b7a76d;
+    border-radius: 4px;
+    background-color: #1E1E1E;
+    color: #fff;
+}
+
+.error-message {
+    display: none;
+    color: red;
+    margin-top: 4px;
+    font-size: 20px;
+}
+
+.valid {
+    border-color: green;
+}
+.invalid {
+    border-color: red;
+}
+
+button {
+    background-color: #b7a76d;
+    color: #1E1E1E;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: white;
+}
+
+
+
+@media (max-width: 768px) {
+    body {
+        background-size: auto; /* Ajusta el tamaño del fondo a automático en dispositivos móviles */
+    }
+
+    form {
+        margin: 5rem; /* Ajusta el margen en dispositivos móviles */
+    }
+
+    input,
+    textarea {
+        width: calc(100% - 16px); /* Ajusta el ancho de los campos de entrada y textarea en dispositivos móviles */
+    }
+
+    button {
+        width: 100%; /* Ajusta el ancho del botón al 100% en dispositivos móviles */
+        margin-top: 1rem;
+    }
+}
