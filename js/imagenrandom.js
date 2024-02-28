@@ -8,7 +8,9 @@ const imageNames=[
     'foto-arma4.png'
 ];
 
-const basePath='../img/';
+const basePath = 'img/'; // Si la carpeta "img" está en el mismo directorio que tu archivo HTML
+
+
 
 // Función para cambiar la imagen de manera aleatoria
 function changeImage(){
