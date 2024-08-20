@@ -1,0 +1,228 @@
+
+
+body{
+    background-color: #F2F2F2;
+}
+/*cta-section*/
+
+@keyframes appearFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  #cta-section {
+    background-color: #1E1E1E;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    border-bottom: 4px solid #b7a76d;
+    animation: appearFromLeft 1.2s ease-in-out; /* Ajusta la duración y la función de temporización según sea necesario */
+  }
+  
+  .cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #b7a76d;
+    color: #1E1E1E;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    
+  }
+  
+  button:hover {
+    background-color: #b7a76d;
+    color: white;
+  }
+
+  
+  .hidden {
+    display: none;
+  }
+
+  @keyframes appearFromOutside {
+    from {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .show-message {
+    display: block;
+    background-color: #b7a76d;
+    margin-top: 3rem;
+    color: #1E1E1E;
+    padding: 0.25rem;
+    border-radius: 1rem;
+    font-size: 35px;
+    animation: appearFromOutside 1s ease-in-out; /* Ajusta la duración y la función de temporización según sea necesario */
+  }
+  
+  .show-message img {
+    height: 40px;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+
+  /*nosotros-info*/
+
+  .nosotros-info{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-color: white;
+    margin-top: 5rem;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+
+  .nosotros-info:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .nosotros-info h2{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+
+  .nosotros-info a {
+    color: #1E1E1E;
+    text-decoration: none;
+    background-color: #b7a76d;
+    border-radius: 2rem;
+    margin-bottom: 2rem; /* Ajusta la distancia entre el borde y el elemento a */
+    padding: 1rem;
+    display: inline-block; /* Hace que el enlace sea un bloque en línea para que se aplique el margen correctamente */
+  }
+
+  .nosotros-info a:hover{
+    color: white;
+    background-color: #b7a76d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  /*Final*/
+
+  .Final{
+    padding: 2rem;
+    background-color: #1E1E1E;
+    color:white;
+    margin-top: 7rem;
+    text-align: center;
+    border-top: 4px solid #b7a76d;
+  }
+
+.contenedor-redes {
+    margin-top: 4rem;
+    background-color: #fff;
+    padding: 1rem;
+    margin-right: 30%;
+    margin-left: 30%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.tooltip {
+    position: relative;
+    margin-right: 4rem;
+}
+
+.tooltip::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 100%; /* Cambiado de 50% */
+    transform: translateY(-50%);
+    background-color: #1E1E1E;
+    color: #b7a76d;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+   
+}
+
+.tooltip:hover::before {
+    opacity: 1;
+}
+
+.contenedor-redes img {
+    width: 30px;
+    height: 30px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+/* ... Otros estilos ... */
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  body {
+      margin: 0; /* Elimina el margen del cuerpo para aprovechar completamente el espacio */
+  }
+
+
+
+  .derecha {
+      width: 100%; /* Ajusta el ancho al 100% en dispositivos móviles */
+      justify-content: center; /* Centra los elementos en dispositivos móviles */
+      margin-top: 1rem; /* Ajusta el margen superior en dispositivos móviles */
+  }
+
+  .navegador {
+      flex-direction: column;
+      align-items: center; /* Centra los elementos en dispositivos móviles */
+      margin-top: 1rem; /* Ajusta el margen superior en dispositivos móviles */
+  }
+
+  .hamburguesa-container {
+      display: block;
+      margin-right: 1rem; /* Añade un margen derecho en dispositivos móviles */
+  }
+
+  .navegador a {
+      margin: 0.5rem 0; /* Ajusta el margen entre los elementos en dispositivos móviles */
+  }
+
+  .nosotros-info {
+      margin-left: 1rem;
+      margin-right: 1rem; /* Ajusta los márgenes en dispositivos móviles */
+  }
+
+  .contenedor-redes {
+      margin: 1rem; /* Ajusta el margen en dispositivos móviles */
+  }
+
+  .tooltip::before{
+    font-size: 1rem;
+    z-index: 1;
+  }
+}

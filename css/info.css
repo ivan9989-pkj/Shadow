@@ -1,0 +1,591 @@
+body{
+    background-color: #F2F2F2;
+}
+
+#Info{
+    
+    font-family:Arial, Helvetica, sans-serif ;
+    background-color: #1E1E1E;
+    border-bottom: 4px solid #b7a76d;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    margin-bottom: 10rem;
+}
+
+
+
+#Info h2{
+    color: #fff;
+}
+
+ul {
+    list-style:none ;
+}
+
+
+.navinfo{
+    list-style: none;
+    justify-content: center;
+    display: flex;
+   
+}
+
+.navinfo li a{
+
+    background-color: #1E1E1E;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+
+   
+}
+
+.navinfo li a:hover{
+    background-color:#434343 ;
+}
+
+.navinfo > li{
+   float: center;
+  
+}
+
+.navinfo li ul{
+    display:none;
+    position: absolute;
+    min-width: 120px;
+    
+}
+
+.navinfo li:hover > ul{
+    display: block;
+    
+}
+
+.navinfo li ul li {
+    position: relative;
+    
+}
+
+.navinfo li ul li ul{
+    right: -120px;
+    top: 0px;
+    
+
+}
+
+/*Videos*/
+
+#Videos {
+    text-align: center;
+    margin: 5rem;
+}
+
+#Videos h2{
+    margin-bottom: 7rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration:underline;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+
+.video-placeholder {
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    overflow: hidden; /* Para ocultar cualquier desbordamiento del video */
+}
+
+.video-placeholder video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para hacer que el video cubra completamente el contenedor */
+}
+
+
+.video-link{
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+.video-link button{
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    background-color:black ;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 22px;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: all;
+}
+
+.video-link button:hover{
+    background-color: #b7a76d;
+}
+
+
+/*letras*/
+#letras {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#letras button {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: #fff; /* Color del texto */
+    background-color: #1E1E1E; /* Color de fondo */
+    border: 1px solid #b7a76d; /* Color del borde */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#letras button:hover {
+    background-color: #b7a76d; /* Cambio de color de fondo al pasar el ratón */
+    color: #1E1E1E; /* Cambio de color del texto al pasar el ratón */
+}
+
+
+
+/*Tienda*/
+/* Estilos para la sección de la tienda */
+#Tienda {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 20rem;
+    margin-left: 30rem;
+    margin-right: 30rem;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.Tienda-info{
+    
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-color: #b7a76d;
+    border-width: 4px 40px 4px 30px;
+    border-radius: 0px 150px 0px 150px;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+.Tienda-info h3{
+    margin-top: 1rem;
+}
+
+.Tienda-info p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+/* Estilos para el contenedor de cada tienda */
+.contenedor-tienda {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    border:1px solid #b7a76d;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos en el eje vertical */
+}
+
+/* Estilos para la imagen dentro de cada tienda */
+.contenedor-tienda picture {
+  
+    overflow: hidden;
+    border-radius: 0.25rem;
+    margin: 0 auto;
+}
+
+.contenedor-tienda picture img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+
+/* Estilos para el nombre y dirección dentro de cada tienda */
+.contenido-tienda {
+    margin-top: 15px;
+}
+
+.contenido-tienda h3 {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 0.5rem;
+    background-color: #1E1E1E;
+    border-radius: 0.25rem;
+    
+    
+}
+
+.contenido-tienda h3:hover {
+    color: #FFFFFF;
+    background-color: #b7a76d;
+    border: 2px solid #b7a76d;
+    border-radius: 0.25rem;
+    
+}
+
+.contenedor-tienda a{
+    text-decoration: none;
+    
+}
+
+
+
+/*footer*/
+
+
+#Hangar{
+
+background-color: #1E1E1E;
+padding: 5rem;
+margin-top: 15rem;
+border-top-right-radius:  0.25rem 0.25rem ;
+border-top: 4px solid #b7a76d;
+
+
+
+}
+
+.Hangar37 {
+    padding: 3rem;
+    background-color: #FFFFFF;
+    margin-left: 30%;
+    margin-right: 30%;
+    display: flex;
+    flex-direction: row;
+    border-width: 4px;
+    border-radius: 20px 100px 100px 20px;
+    border-color: #b7a76d;
+    border-style: solid;
+
+}
+
+.Hangar37 img{
+    width:250px ;
+    height: 275px;
+    border: 3px solid #b7a76d;
+    border-radius: 0.25rem;
+}
+
+
+.Hangar37-p{
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+.Hangar37-p h3{
+    margin-left: 5rem;
+    margin-bottom: 0.25rem;
+    
+}
+
+
+
+.boton-hangar{
+    text-decoration: none;
+    padding: 1rem;
+    background-color: #1E1E1E;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    
+    
+}
+
+.boton-hangar:hover{
+    color: #b7a76d;
+    border: 2px solid #b7a76d;
+}
+
+/*Volver*/
+
+.Saber-mas{
+    text-align: center;
+    margin-top: 5rem;
+    color: #FFFFFF;
+
+}
+
+.Saber-mas h3{
+    margin-bottom: 4rem;
+}
+
+.volver-nosotros{
+    text-decoration: none;
+    margin-top: 10rem;
+    padding: 2rem;
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    border-radius: 0.5rem;
+    border: 2px solid #b7a76d;
+}
+
+.volver-nosotros:hover{
+    
+    background-color: #b7a76d;
+    border: 2px solid #b7a76d;
+    
+}
+
+
+@media (max-width: 768px) {
+
+    body {
+        background-color: #F2F2F2;
+    }
+
+    #Info {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #1E1E1E;
+        border-bottom: 4px solid #b7a76d;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        margin-bottom: 10rem;
+    }
+
+    #Info h2 {
+        color: #fff;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .navinfo {
+        list-style: none;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navinfo li a {
+        background-color: #1E1E1E;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .navinfo li a:hover {
+        background-color: #434343;
+    }
+
+    .navinfo > li {
+        float: none;
+    }
+
+    .navinfo li ul {
+        display: none;
+        position: static;
+        min-width: auto;
+    }
+
+    .navinfo li:hover > ul {
+        display: none;
+    }
+
+    .navinfo li ul li {
+        position: static;
+    }
+
+    .navinfo li ul li ul {
+        right: auto;
+        top: auto;
+    }
+
+    /* Videos */
+
+    #Videos {
+        text-align: center;
+        margin: 2rem;
+    }
+
+    #Videos h2 {
+        margin-bottom: 3rem;
+        font-family: 'Courier New', Courier, monospace;
+        text-decoration: underline;
+    }
+
+    .video-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .video-placeholder {
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 0.25rem;
+        overflow: hidden;
+        margin-bottom: 1rem;
+    }
+
+    .video-placeholder video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .video-link {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .video-link button {
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 0.25rem;
+        font-size: 22px;
+        margin-bottom: 1rem;
+    }
+
+    .video-link button:hover {
+        background-color: #b7a76d;
+    }
+
+    /*Tienda */
+
+    #Tienda{
+        margin-top:  5rem;
+        display: flex;
+        flex-direction: column;
+        margin-left:5.5rem;
+       
+    }
+
+    .Tienda-info p{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .Tienda-info{
+        border-radius: 10px;
+        border-width: 10px;
+       
+    }
+
+
+    .contenedor-tienda{
+        padding: 5rem;
+        padding-right: 7rem;
+        padding-left: 7rem;
+    }
+
+    .contenedor-tienda picture img {
+        width: 150px;
+        height: 150px;
+        border-radius: 0.25rem;
+    }
+
+    .contenido-tienda h3{
+        font-size: 1.25em;
+    }
+
+    /*footer*/
+
+    #Hangar{
+        padding: 1rem;
+    }
+
+    .Hangar37{
+        margin-top: 5rem;
+        padding: 5rem;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+
+    }
+
+    .Hangar37 img{
+        margin-bottom: 2rem;
+        width:250px ;
+        height: 175px;
+        border: 3px solid #b7a76d;
+        border-radius: 0.25rem;
+        justify-items: center;
+    }
+    .Hangar37-p{
+        margin-left: 0rem;
+
+    }
+    .Hangar37-p h3{
+        margin-left: 1.75rem;
+        margin-bottom: 0.25rem;
+        
+    }
+
+    .boton-hangar{
+        text-decoration: none;
+        padding: 2rem;
+        background-color: #1E1E1E;
+        text-align: center;
+        color: #FFFFFF;
+        border-radius: 1rem;
+        
+        
+        
+    }
+
+    .boton-hangar:hover{
+        color: #b7a76d;
+        border: 2px solid #b7a76d;
+    }
+
+    
+
+}
