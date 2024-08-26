@@ -553,7 +553,7 @@ border-top: 4px solid #b7a76d;
 
     .Hangar37 img{
         margin-bottom: 2rem;
-        width:250px ;
+        width:200px ;
         height: 175px;
         border: 3px solid #b7a76d;
         border-radius: 0.25rem;
@@ -561,12 +561,12 @@ border-top: 4px solid #b7a76d;
     }
     .Hangar37-p{
         margin-left: 0rem;
+        margin-right: 0rem;
 
     }
     .Hangar37-p h3{
-        margin-left: 1.75rem;
+        margin-left: 1.25rem;
         margin-bottom: 0.25rem;
-        
     }
 
     .boton-hangar{

@@ -18,12 +18,12 @@ body{
 
 /*Estilo para la barra de navegacion*/
 .barra{
+
     background-color: var(--Negro);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    border-top-right-radius: 0.5rem;
     border-bottom: none;
     
 }
@@ -311,7 +311,6 @@ body{
         padding-left: 0;
         background: #fff;
         -webkit-print-color-adjust: exact; /*economy | exact*/
-        
         color-adjust: exact;
     }
 

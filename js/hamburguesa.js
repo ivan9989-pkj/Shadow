@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
         navegacion.classList.toggle('resposive--dinamico');
 
         if (hamburguesa.src.includes('hamburguesa.svg')) {
-            hamburguesa.src = '../img/cruz.svg';
+            hamburguesa.src = './img/cruz.svg';
         } else {
-            hamburguesa.src = '../img/hamburguesa.svg';
+            hamburguesa.src = './img/hamburguesa.svg';
         }
     });
 

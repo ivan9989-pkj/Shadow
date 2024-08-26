@@ -1,14 +1,13 @@
 
 // Lista de nombres de archivos de imágenes en la carpeta "img"
 const imageNames=[
-
     'foto-arma1.png',
     'foto-arma2.png',
     'foto-arma3.png',
     'foto-arma4.png'
 ];
 
-const basePath='../img/';
+const basePath='./img/';
 
 // Función para cambiar la imagen de manera aleatoria
 function changeImage(){
